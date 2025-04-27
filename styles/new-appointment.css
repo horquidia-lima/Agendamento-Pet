@@ -1,0 +1,18 @@
+.new-appointment {
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    background: var(--background-brand);
+    box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+
+    font-family: 'Inter Tight';
+    font-weight: 700;
+    line-height: 24px;
+    color: #050505;
+    
+    position: absolute;
+    right: 40px;
+    bottom: -290px;
+   
+}
