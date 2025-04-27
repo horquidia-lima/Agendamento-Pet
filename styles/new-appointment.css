@@ -1,4 +1,5 @@
-.new-appointment {
+.new-appointment,
+.schedule-btn {
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
@@ -10,9 +11,17 @@
     font-weight: 700;
     line-height: 24px;
     color: #050505;
-    
+}
+
+.new-appointment {
     position: absolute;
     right: 40px;
     bottom: -290px;
-   
+}
+
+.schedule-btn {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
 }

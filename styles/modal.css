@@ -1,0 +1,107 @@
+.modal-overlay {
+    background-color: var(--background-tertiary);
+    max-width: 29.81rem;
+    margin-inline: auto;
+    border-radius: 0.75rem;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .modal-content {
+        padding: 2.31rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        position: relative;
+
+        & h2 {
+            font-family: 'Inter Tight';
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 32px;
+        }
+
+        & .appointment-form {
+            margin-top: 1.75rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            & .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+
+                & .form-label {
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 24px;
+                }
+
+                & .icon-input {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    border-radius: 0.5rem;
+                    border: 1px solid var(--border-primary);
+                    padding: 0.75rem;
+
+                    & .form-input {
+                        width: 100%;
+                        color: white;
+                        font-size: 0.875rem;
+                        background: transparent;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                            border-color: #7c3aed;
+                        }
+                    }
+                }
+
+                & .form-textarea {
+                    width: 100%;
+                    background: transparent;
+
+                    border-radius: 0.5rem;
+                    border: 1px solid var(--border-primary);
+                    padding: 0.75rem;
+
+                    color: white;
+                    min-height: 5.18rem;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #7c3aed;
+                    }
+                }
+                
+            }
+
+            & .date-time-row {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                & .form-group {
+                    flex: 1;
+                }
+            }
+        }
+
+    }
+}
